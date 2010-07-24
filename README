@@ -1,0 +1,10 @@
+The web_spreadsheet.rb is a little ruby application that reads all of the Excel documents in the present working directory and displays their contents on a web page. 
+
+It is pretty minimal, and can be expanded upon as you see fit.  Currently it displays any spreadsheets I tested without issue.  I started down the path of being
+able to retrieve specific cells and also to set values to specific cells.  The general idea was to allow users in an enterprisey environment to share spreadsheet data
+and functionality without losing control of the spreadsheet itself...  
+
+I think there was some issue with Excel processes hanging around, so I kill them all occasionally.  Moral of the story, don't be running this server and working
+on a spreadsheet at the same time.  Unintended results might otherwise ensue :).
+
+Since it uses Windows OLE, it needs to run on Windows and requires an Excel install.  Not bad for 150 lines of code though.
